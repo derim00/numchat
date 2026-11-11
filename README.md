@@ -16,9 +16,10 @@ Snapchat Web, ouvert dans une fenêtre Chrome qui lui est dédiée.
 
 NumChat fait partie de **[NumSocial](https://github.com/derim00/numsocial)** :
 le même firmware contient aussi **[NumTube](https://github.com/derim00/numtube)**
-(YouTube) et **[NumScreen](https://github.com/derim00/numscreen)**
-(l'écran de l'ordinateur sur la calculatrice), et une seule appli, **NumSocial**,
-installe celles que tu choisis.
+(YouTube), **[NumScreen](https://github.com/derim00/numscreen)**
+(l'écran de l'ordinateur sur la calculatrice) et **[NumBlocks](https://github.com/derim00/numblocks-multiplayer)** (Minecraft
+en multijoueur), et une seule appli, **NumSocial**, installe celles que tu
+choisis.
 
 > [!WARNING]
 > **Ton compte Snapchat.** Piloter Snapchat Web automatiquement est contraire aux
@@ -292,6 +293,7 @@ cd tests
 ../.venv/bin/python3 fake_numchat.py --snapchat NOM        # vrai Snapchat, lecture seule
 ../.venv/bin/python3 fake_numchat.py --snapchat NOM "salut"   # envoie vraiment « salut » à NOM
 ../.venv/bin/python3 fake_numscreen.py                     # NumScreen : image de test, rien n'est cliqué
+../.venv/bin/python3 fake_numblocks.py                     # NumBlocks : deux calculatrices, broker public
 ```
 
 L'appli et la passerelle acceptent aussi `NUMCHAT=demo` (ou `./numsocial
