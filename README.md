@@ -16,7 +16,9 @@ Snapchat Web, ouvert dans une fenêtre Chrome qui lui est dédiée.
 
 NumChat fait partie de **[NumSocial](https://github.com/derim00/numsocial)** :
 le même firmware contient aussi **[NumTube](https://github.com/derim00/numtube)**
-(YouTube), et une seule appli, **NumSocial**, installe l'une, l'autre ou les deux.
+(YouTube) et **[NumScreen](https://github.com/derim00/numscreen)**
+(l'écran de l'ordinateur sur la calculatrice), et une seule appli, **NumSocial**,
+installe celles que tu choisis.
 
 > [!WARNING]
 > **Ton compte Snapchat.** Piloter Snapchat Web automatiquement est contraire aux
@@ -146,12 +148,12 @@ open app/dist/NumSocial.app
 3. La page affiche « Calculatrice prête pour l'installation » et lit toute seule
    la **version officielle** (sinon : Paramètres > À propos > Version sur la
    calculatrice).
-4. Dans **Applis à installer**, coche **NumChat** (et **NumTube** si tu veux
-   aussi YouTube).
+4. Dans **Applis à installer**, coche **NumChat** (et **NumTube**, **NumScreen**
+   si tu les veux aussi).
 5. Clique **Installer sur la calculatrice**. Ne débranche pas pendant
    l'installation (environ 1 minute).
 6. La calculatrice redémarre sur un écran « UNOFFICIAL SOFTWARE » : c'est
-   normal. NumChat est la dernière icône de l'écran d'accueil.
+   normal. NumChat est en bas de l'écran d'accueil.
 
 Le firmware officiel n'est jamais effacé : NumSocial va dans l'autre
 emplacement de la mémoire. Un **reset au dos** ramène le firmware officiel.
@@ -289,6 +291,7 @@ cd tests
 ../.venv/bin/python3 fake_numchat.py                       # messagerie de démo : liste, envoi, emojis, snaps
 ../.venv/bin/python3 fake_numchat.py --snapchat NOM        # vrai Snapchat, lecture seule
 ../.venv/bin/python3 fake_numchat.py --snapchat NOM "salut"   # envoie vraiment « salut » à NOM
+../.venv/bin/python3 fake_numscreen.py                     # NumScreen : image de test, rien n'est cliqué
 ```
 
 L'appli et la passerelle acceptent aussi `NUMCHAT=demo` (ou `./numsocial
